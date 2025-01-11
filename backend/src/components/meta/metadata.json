@@ -15,6 +15,25 @@
     "metaDescription": {
       "type": "text",
       "required": true
+    },
+    "metaKeywords": {
+      "type": "text"
+    },
+    "ogTitle": {
+      "type": "string"
+    },
+    "ogDescription": {
+      "type": "text"
+    },
+    "ogImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "canonicalUrl": {
+      "type": "string"
     }
   }
 }
