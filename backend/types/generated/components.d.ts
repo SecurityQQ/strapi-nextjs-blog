@@ -1,5 +1,6 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+<<<<<<< HEAD
 export interface ElementsAuthContent extends Struct.ComponentSchema {
   collectionName: 'components_elements_auth_contents';
   info: {
@@ -41,6 +42,8 @@ export interface ElementsBadgeWithStars extends Struct.ComponentSchema {
   };
 }
 
+=======
+>>>>>>> 9bb813815f48dbe2c6aa479cf7383080e467bfb3
 export interface ElementsFeature extends Struct.ComponentSchema {
   collectionName: 'components_elements_features';
   info: {
@@ -72,6 +75,7 @@ export interface ElementsFeatureColumn extends Struct.ComponentSchema {
   };
 }
 
+<<<<<<< HEAD
 export interface ElementsFeatureHero extends Struct.ComponentSchema {
   collectionName: 'components_elements_feature_heroes';
   info: {
@@ -84,6 +88,8 @@ export interface ElementsFeatureHero extends Struct.ComponentSchema {
   };
 }
 
+=======
+>>>>>>> 9bb813815f48dbe2c6aa479cf7383080e467bfb3
 export interface ElementsFeatureRow extends Struct.ComponentSchema {
   collectionName: 'components_slices_feature_rows';
   info: {
@@ -114,6 +120,7 @@ export interface ElementsFooterSection extends Struct.ComponentSchema {
   };
 }
 
+<<<<<<< HEAD
 export interface ElementsHeadline extends Struct.ComponentSchema {
   collectionName: 'components_elements_headlines';
   info: {
@@ -126,6 +133,8 @@ export interface ElementsHeadline extends Struct.ComponentSchema {
   };
 }
 
+=======
+>>>>>>> 9bb813815f48dbe2c6aa479cf7383080e467bfb3
 export interface ElementsLogos extends Struct.ComponentSchema {
   collectionName: 'components_elements_logos';
   info: {
@@ -229,6 +238,7 @@ export interface ElementsWelcome extends Struct.ComponentSchema {
       Schema.Attribute.DefaultTo<'Welcome back, {name}!'>;
   };
 }
+
 
 export interface LayoutFooter extends Struct.ComponentSchema {
   collectionName: 'components_layout_footers';
@@ -337,6 +347,7 @@ export interface LinksSocialLink extends Struct.ComponentSchema {
   };
 }
 
+
 export interface MetaGoogleBot extends Struct.ComponentSchema {
   collectionName: 'components_meta_google_bots';
   info: {
@@ -354,6 +365,7 @@ export interface MetaGoogleBot extends Struct.ComponentSchema {
   };
 }
 
+
 export interface MetaMetadata extends Struct.ComponentSchema {
   collectionName: 'components_meta_metadata';
   info: {
@@ -370,6 +382,7 @@ export interface MetaMetadata extends Struct.ComponentSchema {
     ogDescription: Schema.Attribute.Text;
     ogImage: Schema.Attribute.Media<'images'>;
     ogTitle: Schema.Attribute.String;
+
     robots: Schema.Attribute.Component<'meta.robots', false>;
     structuredData: Schema.Attribute.JSON;
     twitterCard: Schema.Attribute.Component<'meta.twitter-x-card', false>;
@@ -424,6 +437,7 @@ export interface MetaVerification extends Struct.ComponentSchema {
     bing: Schema.Attribute.String;
     google: Schema.Attribute.String;
     yandex: Schema.Attribute.String;
+
   };
 }
 
@@ -442,6 +456,7 @@ export interface SectionsBottomActions extends Struct.ComponentSchema {
   };
 }
 
+
 export interface SectionsBulkHero extends Struct.ComponentSchema {
   collectionName: 'components_sections_bulk_heroes';
   info: {
@@ -454,6 +469,7 @@ export interface SectionsBulkHero extends Struct.ComponentSchema {
     headline: Schema.Attribute.Component<'elements.headline', false>;
   };
 }
+
 
 export interface SectionsFeatureColumnsGroup extends Struct.ComponentSchema {
   collectionName: 'components_slices_feature_columns_groups';
@@ -607,6 +623,7 @@ export interface SectionsUseCasesSection extends Struct.ComponentSchema {
   };
 }
 
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -686,6 +703,7 @@ export interface SharedVideoEmbed extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+
       'elements.auth-content': ElementsAuthContent;
       'elements.badge-with-stars': ElementsBadgeWithStars;
       'elements.feature': ElementsFeature;
@@ -694,12 +712,20 @@ declare module '@strapi/strapi' {
       'elements.feature-row': ElementsFeatureRow;
       'elements.footer-section': ElementsFooterSection;
       'elements.headline': ElementsHeadline;
+
+      'elements.feature': ElementsFeature;
+      'elements.feature-column': ElementsFeatureColumn;
+      'elements.feature-row': ElementsFeatureRow;
+      'elements.footer-section': ElementsFooterSection;
+
       'elements.logos': ElementsLogos;
       'elements.notification-banner': ElementsNotificationBanner;
       'elements.plan': ElementsPlan;
       'elements.testimonial': ElementsTestimonial;
+
       'elements.use-case': ElementsUseCase;
       'elements.welcome': ElementsWelcome;
+
       'layout.footer': LayoutFooter;
       'layout.logo': LayoutLogo;
       'layout.navbar': LayoutNavbar;
@@ -707,6 +733,7 @@ declare module '@strapi/strapi' {
       'links.button-link': LinksButtonLink;
       'links.link': LinksLink;
       'links.social-link': LinksSocialLink;
+
       'meta.google-bot': MetaGoogleBot;
       'meta.metadata': MetaMetadata;
       'meta.robots': MetaRobots;
@@ -714,6 +741,7 @@ declare module '@strapi/strapi' {
       'meta.verification': MetaVerification;
       'sections.bottom-actions': SectionsBottomActions;
       'sections.bulk-hero': SectionsBulkHero;
+
       'sections.feature-columns-group': SectionsFeatureColumnsGroup;
       'sections.feature-rows-group': SectionsFeatureRowsGroup;
       'sections.features': SectionsFeatures;
@@ -724,7 +752,9 @@ declare module '@strapi/strapi' {
       'sections.pricing': SectionsPricing;
       'sections.rich-text': SectionsRichText;
       'sections.testimonials-group': SectionsTestimonialsGroup;
+
       'sections.use-cases-section': SectionsUseCasesSection;
+
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

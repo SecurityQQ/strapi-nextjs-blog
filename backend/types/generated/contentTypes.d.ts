@@ -592,6 +592,8 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
   };
   options: {
     draftAndPublish: true;
+    increments: true;
+    timestamps: true;
   };
   pluginOptions: {
     i18n: {
@@ -612,9 +614,11 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.lead-form',
         'sections.features',
         'sections.heading',
+
         'elements.feature-hero',
         'sections.bulk-hero',
         'sections.use-cases-section',
+
       ]
     > &
       Schema.Attribute.SetPluginOptions<{
