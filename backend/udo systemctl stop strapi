@@ -1,0 +1,51 @@
+-- Logs begin at Tue 2024-11-12 12:54:35 UTC, end at Sat 2025-01-11 09:51:49 UTC. --
+Jan 11 09:51:35 instance-20241112-125137 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mstrapi.service: Failed with result 'exit-code'.[0m
+Jan 11 09:51:35 instance-20241112-125137 systemd[1]: strapi.service: Scheduled restart job, restart counter is at 91.
+Jan 11 09:51:35 instance-20241112-125137 systemd[1]: Stopped Strapi Headless CMS.
+Jan 11 09:51:35 instance-20241112-125137 systemd[1]: Started Strapi Headless CMS.
+Jan 11 09:51:35 instance-20241112-125137 node[91249]: yarn run v1.22.22
+Jan 11 09:51:35 instance-20241112-125137 node[91249]: $ strapi start
+Jan 11 09:51:40 instance-20241112-125137 node[91261]: [2025-01-11 09:51:40.506] debug: ⛔️ Server wasn't able to start properly.
+Jan 11 09:51:40 instance-20241112-125137 node[91261]: [2025-01-11 09:51:40.508] error: select * from sqlite_master where type = 'table' and name = 'strapi_core_store_settings' - file is not a database
+Jan 11 09:51:40 instance-20241112-125137 node[91261]: SqliteError: select * from sqlite_master where type = 'table' and name = 'strapi_core_store_settings' - file is not a database
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at Database.prepare (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/better-sqlite3/lib/methods/wrappers.js:5:21)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at Client_BetterSQLite3._query (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/dialects/better-sqlite3/index.js:30:34)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at executeQuery (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at Client_BetterSQLite3.query (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/client.js:146:12)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at Runner.query (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:123:36)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at Runner.queryArray (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:217:21)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at ensureConnectionCallback (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:11:19)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at Runner.ensureConnection (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:300:20)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at async Runner.run (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:30:19)
+Jan 11 09:51:40 instance-20241112-125137 node[91261]:     at async Strapi.bootstrap (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/@strapi/strapi/lib/Strapi.js:444:9)
+Jan 11 09:51:40 instance-20241112-125137 node[91249]: error Command failed with exit code 1.
+Jan 11 09:51:40 instance-20241112-125137 node[91249]: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Jan 11 09:51:40 instance-20241112-125137 systemd[1]: [0;1;39m[0;1;31m[0;1;39mstrapi.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jan 11 09:51:40 instance-20241112-125137 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mstrapi.service: Failed with result 'exit-code'.[0m
+Jan 11 09:51:40 instance-20241112-125137 systemd[1]: strapi.service: Scheduled restart job, restart counter is at 92.
+Jan 11 09:51:40 instance-20241112-125137 systemd[1]: Stopped Strapi Headless CMS.
+Jan 11 09:51:40 instance-20241112-125137 systemd[1]: Started Strapi Headless CMS.
+Jan 11 09:51:41 instance-20241112-125137 node[91278]: yarn run v1.22.22
+Jan 11 09:51:41 instance-20241112-125137 node[91278]: $ strapi start
+Jan 11 09:51:45 instance-20241112-125137 node[91290]: [2025-01-11 09:51:45.912] debug: ⛔️ Server wasn't able to start properly.
+Jan 11 09:51:45 instance-20241112-125137 node[91290]: [2025-01-11 09:51:45.915] error: select * from sqlite_master where type = 'table' and name = 'strapi_core_store_settings' - file is not a database
+Jan 11 09:51:45 instance-20241112-125137 node[91290]: SqliteError: select * from sqlite_master where type = 'table' and name = 'strapi_core_store_settings' - file is not a database
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at Database.prepare (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/better-sqlite3/lib/methods/wrappers.js:5:21)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at Client_BetterSQLite3._query (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/dialects/better-sqlite3/index.js:30:34)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at executeQuery (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/internal/query-executioner.js:37:17)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at Client_BetterSQLite3.query (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/client.js:146:12)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at Runner.query (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:123:36)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at Runner.queryArray (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:217:21)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at ensureConnectionCallback (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/internal/ensure-connection-callback.js:11:19)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at Runner.ensureConnection (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:300:20)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at async Runner.run (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/knex/lib/execution/runner.js:30:19)
+Jan 11 09:51:45 instance-20241112-125137 node[91290]:     at async Strapi.bootstrap (/home/aleksandrmalysev/strapi-nextjs-blog/backend/node_modules/@strapi/strapi/lib/Strapi.js:444:9)
+Jan 11 09:51:45 instance-20241112-125137 node[91278]: error Command failed with exit code 1.
+Jan 11 09:51:45 instance-20241112-125137 node[91278]: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Jan 11 09:51:45 instance-20241112-125137 systemd[1]: [0;1;39m[0;1;31m[0;1;39mstrapi.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jan 11 09:51:45 instance-20241112-125137 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mstrapi.service: Failed with result 'exit-code'.[0m
+Jan 11 09:51:46 instance-20241112-125137 systemd[1]: strapi.service: Scheduled restart job, restart counter is at 93.
+Jan 11 09:51:46 instance-20241112-125137 systemd[1]: Stopped Strapi Headless CMS.
+Jan 11 09:51:46 instance-20241112-125137 systemd[1]: Started Strapi Headless CMS.
+Jan 11 09:51:46 instance-20241112-125137 node[91305]: yarn run v1.22.22
+Jan 11 09:51:46 instance-20241112-125137 node[91305]: $ strapi start
