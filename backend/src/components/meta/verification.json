@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_meta_verifications",
+  "info": {
+    "displayName": "Verification"
+  },
+  "options": {},
+  "attributes": {
+    "yandex": {
+      "type": "string"
+    },
+    "google": {
+      "type": "string"
+    },
+    "bing": {
+      "type": "string"
+    }
+  }
+}

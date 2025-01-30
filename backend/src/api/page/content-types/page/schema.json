@@ -9,8 +9,6 @@
     "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {
@@ -51,7 +49,10 @@
         "sections.pricing",
         "sections.lead-form",
         "sections.features",
-        "sections.heading"
+        "sections.heading",
+        "elements.feature-hero",
+        "sections.bulk-hero",
+        "sections.use-cases-section"
       ],
       "pluginOptions": {
         "i18n": {

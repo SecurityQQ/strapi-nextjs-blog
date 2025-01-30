@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_meta_google_bots",
+  "info": {
+    "displayName": "Google Bot",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "maxVideoPreview": {
+      "default": -1,
+      "type": "integer"
+    },
+    "maxImagePreview": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "standard",
+        "large"
+      ],
+      "default": "large"
+    },
+    "maxSnippet": {
+      "type": "integer",
+      "default": -1
+    }
+  }
+}

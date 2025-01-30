@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_feature_heroes",
+  "info": {
+    "displayName": "FeatureHero"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    }
+  }
+}

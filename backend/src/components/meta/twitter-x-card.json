@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_meta_twitter_x_cards",
+  "info": {
+    "displayName": "TwitterX Card",
+    "icon": "expand"
+  },
+  "options": {},
+  "attributes": {
+    "card": {
+      "type": "enumeration",
+      "enum": [
+        "summary",
+        "summary_large_image"
+      ],
+      "default": "summary_large_image"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 70,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "image": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "creator": {
+      "type": "string",
+      "default": "@bulkgen"
+    },
+    "site": {
+      "type": "string",
+      "default": "@bulkgen"
+    }
+  }
+}

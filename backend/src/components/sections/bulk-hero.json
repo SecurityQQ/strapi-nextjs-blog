@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_bulk_heroes",
+  "info": {
+    "displayName": "BulkHero",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.badge-with-stars"
+    },
+    "headline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.headline"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature-hero"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_headlines",
+  "info": {
+    "displayName": "Headline"
+  },
+  "options": {},
+  "attributes": {
+    "main_text": {
+      "type": "string"
+    },
+    "sub_text": {
+      "type": "string"
+    },
+    "highlighted_text": {
+      "type": "string"
+    }
+  }
+}

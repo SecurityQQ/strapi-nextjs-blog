@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_welcomes",
+  "info": {
+    "displayName": "welcome"
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string",
+      "default": "Welcome back, {name}!"
+    },
+    "fallbackName": {
+      "type": "string",
+      "default": "Creator"
+    }
+  }
+}

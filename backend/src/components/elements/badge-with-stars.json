@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_badge_with_stars",
+  "info": {
+    "displayName": "BadgeWithStars"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "#1 AI Bulk Generator",
+      "maxLength": 20
+    },
+    "star_count": {
+      "max": 5,
+      "default": 5,
+      "type": "integer",
+      "min": 0
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

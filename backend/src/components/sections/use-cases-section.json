@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_use_cases_sections",
+  "info": {
+    "displayName": "Use Cases",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Popular Use Cases",
+      "required": true
+    },
+    "override": {
+      "type": "boolean",
+      "default": false
+    },
+    "cases": {
+      "displayName": "use-case",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.use-case"
+    }
+  }
+}

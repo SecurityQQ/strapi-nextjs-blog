@@ -26,14 +26,33 @@
       "type": "text"
     },
     "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "canonicalUrl": {
       "type": "string"
+    },
+    "twitterCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.twitter-x-card"
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "robots": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.robots"
+    },
+    "verification": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.verification"
     }
   }
 }

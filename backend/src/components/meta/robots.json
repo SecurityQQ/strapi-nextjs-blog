@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_meta_robots",
+  "info": {
+    "displayName": "Robots",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "index": {
+      "type": "boolean",
+      "default": true
+    },
+    "follow": {
+      "type": "boolean",
+      "default": true
+    },
+    "googleBot": {
+      "displayName": "Google Bot",
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.google-bot"
+    }
+  }
+}
